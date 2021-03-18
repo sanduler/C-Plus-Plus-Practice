@@ -15,3 +15,10 @@ Program 1-2/.idea/Program 1-2.iml
 Program 1-2/.idea/modules.xml
 Program 1-2/.idea/misc.xml
 Program 1-2/.idea/.name
+*.txt
+*.cbp
+Account Balance/cmake-build-debug/Account_Balance
+*.xml
+*.iml
+Account Balance/.idea/.name
+.DS_Store
