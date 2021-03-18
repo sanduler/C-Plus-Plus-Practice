@@ -16,24 +16,30 @@ int main()
 
     loop = 1;
 
+    cout << endl;
+    cout << "**************************************" << endl << endl;
+    cout << "Welcome to the Balance Checker program" << endl << endl;
+    cout << "**************************************" << endl << endl;
+
     while(loop != 0)
     {
         cout << "What is you starting balance on the Account" << endl;
-        cout << "$";
+        cout << "$ ";
         cin >> startingBalance;
 
-        cout << "Thank you for that information" << endl;
+        cout << "Thank you for that information" << endl << endl;
         cout << "Next, Please provide me the dollar amount of the current deposit:" << endl;
-        cout << "$";
+        cout << "$ ";
         cin >> totalDeposit;
 
         cout << "Thank you, finally provide me the dollar amount that will be withdrawn" << endl;
-        cout << " and I will calculate the Account Balance. " << endl;
-        cout << "$";
+        cout << "and I will calculate the Account Balance. " << endl;
+        cout << "$ ";
         cin >> takeAmount;
 
         Total = (startingBalance + totalDeposit - takeAmount);
 
+        cout << endl;
         cout << "The account Balance is $" << Total << endl << endl;
         cout << "Do you want to run the program again?" << endl;
 
