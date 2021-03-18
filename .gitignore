@@ -7,3 +7,11 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+Program 1-2/CMakeLists.txt
+Program 1-2/cmake-build-debug/Program_1_2.cbp
+Program 1-2/cmake-build-debug/Program_1_2
+Program 1-2/.idea/workspace.xml
+Program 1-2/.idea/Program 1-2.iml
+Program 1-2/.idea/modules.xml
+Program 1-2/.idea/misc.xml
+Program 1-2/.idea/.name
