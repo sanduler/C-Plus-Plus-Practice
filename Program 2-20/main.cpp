@@ -28,21 +28,22 @@ int main()
 
     //Sums the total wages
     double totalWages;
-
+    cout << "***********************************************"
     cout << "I am your Jarvis you wage calculation assistant" << endl;
+    cout << "***********************************************"
     cout << "How many hours did you work this week?" << endl;
-    cout << "Hours: " << endl;
+    cout << "Hours: ";
     cin >> workHours;
 
     cout << endl << endl;
     cout << "How many over time hours did you work this week?" << endl;
     cout << "Overtime Hours: ";
-    cin >> overTimeHours;
+    cin >> overTimeHours;50
 
     cout << endl << endl;
     
     //calculate regualar wages
-    regularWages = basePayRate * regularWages;
+    regularWages = basePayRate * workHours;
 
     //calcualte overtime wages
     overTimeWages = overtimePayRate * overTimeHours;
@@ -53,6 +54,4 @@ int main()
     cout << "Wages for this week are $" << totalWages << endl;
     cout << "Out of which the regular wages were $" << regularWages << endl;
     cout << "The over time wages were $" << overTimeWages << endl;
-
-
 }
