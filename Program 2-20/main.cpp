@@ -28,30 +28,40 @@ int main()
 
     //Sums the total wages
     double totalWages;
-    cout << "***********************************************"
-    cout << "I am your Jarvis you wage calculation assistant" << endl;
-    cout << "***********************************************"
-    cout << "How many hours did you work this week?" << endl;
-    cout << "Hours: ";
-    cin >> workHours;
+    bool loop = true;
 
-    cout << endl << endl;
-    cout << "How many over time hours did you work this week?" << endl;
-    cout << "Overtime Hours: ";
-    cin >> overTimeHours;50
+    while(loop = true)
+        cout << "***********************************************" << endl;
+        cout << "I am your Jarvis you wage calculation assistant" << endl;
+        cout << "***********************************************" << endl;
+        cout << "How many hours did you work this week?" << endl;
+        cout << "Hours: ";
+        cin >> workHours;
 
-    cout << endl << endl;
-    
-    //calculate regualar wages
-    regularWages = basePayRate * workHours;
+        cout << endl << endl;
+        cout << "How many over time hours did you work this week?" << endl;
+        cout << "Overtime Hours: ";
+        cin >> overTimeHours;
 
-    //calcualte overtime wages
-    overTimeWages = overtimePayRate * overTimeHours;
+        cout << endl << endl;
+        
+        //calculate regualar wages
+        regularWages = basePayRate * workHours;
 
-    //calculate total wages
-    totalWages = regularWages + overTimeWages;
+        //calcualte overtime wages
+        overTimeWages = overtimePayRate * overTimeHours;
 
-    cout << "Wages for this week are $" << totalWages << endl;
-    cout << "Out of which the regular wages were $" << regularWages << endl;
-    cout << "The over time wages were $" << overTimeWages << endl;
+        //calculate total wages
+        totalWages = regularWages + overTimeWages;
+
+        cout << "Wages for this week are $" << totalWages << endl;
+        cout << "Out of which the regular wages were $" << regularWages << endl;
+        cout << "The over time wages were $" << overTimeWages << endl;
+
+        cout << "Do you want to run the calculator again ?" << endl;
+        cout << "0 for No" << endl;
+        cout << "1 for Yes" << endl;
+        cout << ":";
+        cin >> loop;
+    return 0;
 }
