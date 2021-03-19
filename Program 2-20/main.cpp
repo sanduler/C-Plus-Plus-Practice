@@ -30,7 +30,9 @@ int main()
     double totalWages;
     bool loop = true;
 
-    while(loop = true)
+    while(loop)
+    {
+        cout << endl;
         cout << "***********************************************" << endl;
         cout << "I am your Jarvis you wage calculation assistant" << endl;
         cout << "***********************************************" << endl;
@@ -63,5 +65,10 @@ int main()
         cout << "1 for Yes" << endl;
         cout << ":";
         cin >> loop;
+    }
+    cout << endl;
+    cout << "Thank you for using the program." << endl;
+    cout << "Have a great day" << endl;
+    cout << endl;
     return 0;
 }
