@@ -47,10 +47,17 @@ int main()
     }
     else
     {
-        cout << "Not a valid grade entered" << endl;
+        testScore = false;
     }
 
     //Display the letter grade 
-    cout << "You grade is " << grade << ".\n";
+    if(testScore)
+    {
+        cout << "You grade is " << grade << ".\n";
+    }
+    else
+    {
+         cout << "Not a valid grade entered" << endl;
+    }
     return 0;
 }
