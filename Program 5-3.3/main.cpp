@@ -20,6 +20,7 @@ int main()
     int players,
         teamSize,
         numTeams,
-        leftOver;          
+        leftOver,         
+        candy bar;
     return 0;
 }
