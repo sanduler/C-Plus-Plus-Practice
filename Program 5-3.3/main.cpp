@@ -13,8 +13,8 @@ using std::endl;
 int main()
 {
     //constants for the program for min and max players
-    const int MIN_PLAYERS = 9,
-              MAX_PLAYERS = 15;
+    const int MIN_PLAYERS = 2,
+              MAX_PLAYERS = 1000;
 
     //varibles for the program
     int players,
@@ -30,7 +30,7 @@ int main()
     while(teamSize < MIN_PLAYERS || teamSize > MAX_PLAYERS)
     {
         cout << "\nTeam size should be " << MIN_PLAYERS << " to " << MAX_PLAYERS << " players. \n";
-        cout << "How manu players do you wish per team? ";
+        cout << "How many players do you wish per team? ";
         cin >> teamSize; 
     }   
     //get and validate the number of players avalible
