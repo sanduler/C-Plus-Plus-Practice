@@ -30,12 +30,12 @@ int main()
         total += points;
 
         //enter the points for the next game
-        game++
+        game++;
         cout << "Enter the points for game " << game << ": ";
         cin >> points;
     }
     //display the total points
-    cout 
-    
+    cout << "\nThe total points are " << total << endl;
+
     return 0;
 }
