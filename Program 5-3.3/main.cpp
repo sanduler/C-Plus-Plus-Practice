@@ -14,7 +14,7 @@ int main()
 {
     //constants for the program for min and max players
     const int MIN_PLAYERS = 2,
-              MAX_PLAYERS = 1000;
+              MAX_PLAYERS = 15;
 
     //varibles for the program
     int players,
@@ -38,7 +38,7 @@ int main()
     cin >> players;
     
     //checks if the number is possitive
-    while (players <=0)
+    while (players <= 0)
     {
         cout << "Please enter a possitive number: ";
         cin >> players;
