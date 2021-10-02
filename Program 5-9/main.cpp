@@ -22,5 +22,20 @@ int main()
     cout << "so far this season. Then enter -1 when finished. \n\n";
     cout << "Enter the points for game " << game << ": ";
     cin >> points; 
+
+    //Loop as ling as the end sentinel has not yet been entered
+    while (points != -1)
+    {
+        //Add points just read in to the accumulator
+        total += points;
+
+        //enter the points for the next game
+        game++
+        cout << "Enter the points for game " << game << ": ";
+        cin >> points;
+    }
+    //display the total points
+    cout 
+    
     return 0;
 }
