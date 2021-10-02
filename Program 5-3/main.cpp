@@ -19,13 +19,15 @@ int main()
     cout << "How manu players do you wish per team?\n";
     cout << "(Enter a value in the range ";
     cout << MIN_PLAYERS << " - " << MAX_PLAYERS << "): " << endl;
-    cout << "Team Size: " <<;
+    cout << "Team Size: " << endl;
     cin >> teamSize;
 
 
     //validate the input
     while(teamSize < MIN_PLAYERS || teamSize > MAX_PLAYERS)
     {
-        cout << 
+    
     }
+
+    return 0;
 }
