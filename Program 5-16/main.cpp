@@ -18,6 +18,7 @@ int main()
     //open the output file
     outputFile.open("demofile.txt");
 
+    cout << "Now writting data to the file\n";
     
     //Write four names to the file
     outputFile << "Bach\n";
