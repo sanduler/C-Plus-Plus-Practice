@@ -11,6 +11,7 @@ using std::cin;
 using std::endl;
 using std::string;
 using std::ofstream;
+using std::ifstream;
 
 int main()
 {
@@ -29,11 +30,30 @@ int main()
         /* code */
         cout << "Friend #" << i << ": ";
         cin >> name;
-        outputFile << i << ". " << name << endl;
+        outputFile << name << endl;
     }
     //Close the file
     outputFile.close();
 
     cout << "The names were saved to a file.\n";
+
+    //read the file
+    ifstream inputFile;
+
+    inputFile.open("Friends.txt");
+    
+    cout << endl;
+    cout << " *********************************** "; 
+    cout << endl;
+    cout << "Here are the names stored in the Friends.txt file\n";
+
+    for (int count = 1;  count <= 3; count++)
+    {
+        /* code */
+        inputFile >> name;
+        cout << name << endl;
+    }
+    inputFile.close();
+
     return 0;
 }
