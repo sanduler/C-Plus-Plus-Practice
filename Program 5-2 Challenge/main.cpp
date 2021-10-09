@@ -1,6 +1,6 @@
 /******************************************************************************* 
 ** Author:       Ruben Sanduleac
-** Date:         October 6th, 2021
+** Date:         October 7th, 2021
 ** Description:  This program asks the user for a posstive integer value and that uses a loop to 
 *                to validate the input. The program should then use a second loop to compute the sum
 *                of all integers from 1 up to the number entred. For exemple if the user enters 50,
