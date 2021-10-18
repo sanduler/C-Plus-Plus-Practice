@@ -1,7 +1,7 @@
 /******************************************************************************* 
 ** Author:       Ruben Sanduleac
 ** Date:         October 17th, 2021
-** Description:  Using a static Variable 
+** Description:  Overloading a function.
 *******************************************************************************/ 
 #include <iostream>
 #include <iomanip>
@@ -29,11 +29,11 @@ int main()
     return 0;
 }
 
-int square(int)
+int square(int number)
 {
-
-}
-double square(double)
+    return number * number;
+}   
+double square(double number)
 {
-    
+    return number * number;
 }
