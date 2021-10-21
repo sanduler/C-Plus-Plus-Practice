@@ -21,7 +21,7 @@ public:
 
     //getter
     double calcAverage();
-    int getLargest()
+    int getLargest();
     int getCount();
 };
 
@@ -35,9 +35,17 @@ SimpleStat::~SimpleStat()
     //not used
 }
 
+int SimpleStat::getLargest()
+{   
+    return largest;
+}
+int SimpleStat::getCount()
+{
+    return count;
+}
 bool SimpleStat::addNumber(int num)
 {
-    bool goodNum - true;
+    bool goodNum = true;
     if (num >= 0)
     {
         /* code */
@@ -55,6 +63,7 @@ bool SimpleStat::addNumber(int num)
         goodNum = false;
     }
     
+    return goodNum;
 }
 
 bool SimpleStat::isNewLargest(int num)
@@ -89,6 +98,21 @@ int main()
 
     SimpleStat statHelper;
 
-    cout << "Please enter the set of non negative integer \n";
-    cout << "values you want to average. Seperate them with \n"
+    std::cout << "Please enter the set of non negative integer \n";
+    std::cout << "values you want to average. Seperate them with \n";
+    std::cout << "spaces and enter -1 after the last value. \n\n";
+
+    std::cin >> num;
+    while (num >= 0)
+    {
+        /* code */
+        statHelper.addNumber(num);
+        std::cin >> num;
+    }
+    std::cout << "\nYou entered " << statHelper.getCount() << " values. \n";
+    std::cout << "The largest value was " << statHelper.getLargest() << std::endl;
+    std::cout << "The average value was " << statHelper.calcAverage() << std::endl;
+
+    return 0;
+    
 }
