@@ -3,6 +3,10 @@
 #include<iostream>
 #include<iomanip>
 #include<string>
+using std::string;
+using std::cin;
+using std::cout;
+using std::endl;
 
 class InventoryItem
 {
@@ -13,7 +17,7 @@ private:
     int onHand;
     double price; 
 public:
-    InventoryItem(int, string, int, double);
+    InventoryItem(int, std::string, int, double);
     int getPartNum();
     std::string getDescription();
     int getOnHand();
@@ -84,7 +88,7 @@ void storeValues(InventoryItem &item)
     std::cout << "Description: ";
     std::cin.get();
 
-    std::getline(cin, description);
+    std::getline(std::cin, description);
     std::cout << "Quantity on hand: ";
     std::cin >> qty;
     std::cout << "Unit Price: ";
