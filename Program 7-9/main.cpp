@@ -67,3 +67,29 @@ int main()
     showValues(part);
     return 0;
 }
+
+//store values
+void storeValues(InventoryItem &item)
+{
+    int partNum;
+    std::string description;
+    int qty;
+    double price;
+
+    //get data from the user
+    std::cout << "Enter data for the new part number \n";
+    std::cout << "Part number: ";
+    std::cin >> partNum;
+
+    std::cout << "Description: ";
+    std::cin.get();
+
+    std::getline(cin, description);
+    std::cout << "Quantity on hand: ";
+    std::cin >> qty;
+    std::cout << "Unit Price: ";
+    std::cin >> price;
+
+    //store the data in the inventory object
+    item.storeInfo(partNum, description, qty, price);
+}
