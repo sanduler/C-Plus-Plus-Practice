@@ -55,4 +55,15 @@ double InventoryItem::getPrice()
 }
 
 //fxn prototypes
-void storeValues(InventoryItem&);
+void storeValues(InventoryItem&);   //Receives an object by reference
+void showValues(InventoryItem);     //Receives an object by value
+
+//main
+int main()
+{
+    InventoryItem part;
+
+    storeValues(part);
+    showValues(part);
+    return 0;
+}
