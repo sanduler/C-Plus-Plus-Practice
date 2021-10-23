@@ -93,3 +93,13 @@ void storeValues(InventoryItem &item)
     //store the data in the inventory object
     item.storeInfo(partNum, description, qty, price);
 }
+
+//showValues function
+void showValues(InventoryItem item)
+{
+    std::cout << std::fixed << std::showpoint << std::setprecision(2) << std::endl;
+    std::cout << "Part Number     : "  << item.getPartNum() << std::endl;
+    std::cout << "Description     : "  << item.getDescription() << std::endl; 
+    std::cout << "Unit On Hands   : "  << item.getOnHand() << std::endl;
+    std::cout << "Price           : $" << item.getPrice() << std::endl;
+}
