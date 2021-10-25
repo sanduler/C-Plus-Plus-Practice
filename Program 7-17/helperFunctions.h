@@ -5,31 +5,15 @@
  *              banking operations. This file should be combined into a project
  *              along with the Account.h and Account.cpp files.
  * ******************************************************************************/
-#ifndef ACCOUNT_H
-#define ACCOUNT_H
+#ifndef HELPERFUNCTIONS_H
+#define HELPERFUNCTIONS_H
+#include <iostream>
+#include "Account.h"
 
-
-class Account {
-private:
-    double balance;
-    double intRate;
-    double interest;
-    int transactions;
-public:
-    //general constructor
-    Account(double rate = 0.045, double bal = 0.0);
-
-    //function helpers/setters
-    void makeDeposit(double);
-    bool withdraw(double);
-    void calcInterest();
-
-    //getters
-    double getBalance();
-    double getInterest();
-    int getTransactions();
-
-};
-
+//Helper functions used in the main
+void displayMenu();
+char getChoice(char);
+void makeDeposit(Account &);
+void withdraw(Account &);
 
 #endif
