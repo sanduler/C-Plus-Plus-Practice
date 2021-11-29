@@ -2,11 +2,12 @@
  * Name: Ruben Sanduleac
  */
 #include "Car.h"
-Car::Car(int yr, std::string mk)
+Car::Car(int yr, std::string mk, std::string mod)
 {
     year = yr;
     make = mk;
-    speed = 0;
+    model = mod;
+    speed = speed;
 }
 
 void Car::setYear(int yr)
@@ -50,4 +51,19 @@ void Car::subSpeed()
     {
         speed = speed - 5;
     }
+}
+
+Car::Car()
+{
+    speed = 0;
+}
+
+void Car::setModel(std::string modl)
+{
+    model = modl;
+}
+
+std::string Car::getModel()
+{
+    return model;
 }
