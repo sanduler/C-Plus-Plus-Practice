@@ -29,6 +29,18 @@ void Date::setYear(int yr)
 
 int Date::getMonth()
 {
+    if(month < 0 || month > 12 )
+    {
+        return false;
+    }
+    else
+    {
+        return month;
+    }
+}
+
+int Date::getDay()
+{
     return 0;
 }
 
