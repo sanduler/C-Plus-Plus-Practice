@@ -8,7 +8,18 @@
 
 
 class PatientAccount {
-
+private:
+    double charges = 0;
+    double days = 0;
+public:
+    //constructor
+    PatientAccount();
+    //setters
+    void setCharge(double);
+    void setDays(double);
+    //getters
+    double getCharges();
+    double getDays();
 };
 
 
