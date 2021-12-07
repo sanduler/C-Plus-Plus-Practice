@@ -10,11 +10,18 @@
 
 class Surgery {
 private:
-    PatientAccount charg;
-
-
+    double armSurgery,
+           legSurgery,
+           hipSurgery,
+           kneeSurgery,
+           neckSurgery;
 public:
+    Surgery();
+    double getArmSurgery();
+    double getLegSurgery();
+    double getHipSurgery();
+    double getKneeSurgery();
+    double getNeckSurgery();
 };
-
 
 #endif

@@ -9,17 +9,23 @@
 
 class PatientAccount {
 private:
-    double charges = 0;
-    double days = 0;
+    double charges;
+    double days;
+    double rate;
+    double cost;
 public:
     //constructor
     PatientAccount();
     //setters
     void setCharge(double);
     void setDays(double);
+    void setRate(double);
+    void setCost(double);
     //getters
     double getCharges();
     double getDays();
+    double getRate();
+    double getCost();
 };
 
 

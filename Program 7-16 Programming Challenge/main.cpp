@@ -38,7 +38,7 @@ int main()
         //send the type of surgery
         do {
             cout << "Which medication did the patient take? (Enter -1 to exit)" << endl;
-            cout << "1. TRT " << endl;
+            cout << "1. Anxiety Pills " << endl;
             cout << "2. Pain Killer (Tylenol, Advil) " << endl;
             cout << "3. Morphine" << endl;
             cout << "4. Vitamins" << endl;

@@ -9,7 +9,18 @@
 
 class Pharmacy {
 private:
+    double Anxiety,
+           painKillers,
+           Morphine,
+           Vitamins,
+           aminoAcids;
 public:
+    Pharmacy();
+    double getAnxiety();
+    double getpainKillers();
+    double getMorphine();
+    double getVitamins();
+    double getaminoAcids();
 };
 
 
