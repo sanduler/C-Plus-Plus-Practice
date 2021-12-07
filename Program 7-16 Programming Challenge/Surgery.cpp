@@ -4,34 +4,37 @@
  * Description:
  * ******************************************/
 #include "Surgery.h"
-#include "PatientAccount.h"
 
 Surgery::Surgery()
 {
-
+    armSurgery = 2333.81;
+    legSurgery = 8455.11;
+    hipSurgery = 12999.46;
+    kneeSurgery = 9822.63;
+    neckSurgery = 3566.28;
 }
 
 double Surgery::getArmSurgery()
 {
-    return 0;
+    return armSurgery;
 }
 
 double Surgery::getLegSurgery()
 {
-    return 0;
+    return legSurgery;
 }
 
 double Surgery::getHipSurgery()
 {
-    return 0;
+    return hipSurgery;
 }
 
 double Surgery::getKneeSurgery()
 {
-    return 0;
+    return kneeSurgery;
 }
 
 double Surgery::getNeckSurgery()
 {
-    return 0;
+    return neckSurgery;
 }

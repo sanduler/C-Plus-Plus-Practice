@@ -7,7 +7,11 @@
 
 Pharmacy::Pharmacy()
 {
-
+    Anxiety = 50.25;
+    painKillers = 16.22;
+    Morphine = 1168.99;
+    Vitamins = 120.2;
+    aminoAcids = 2501.99;
 }
 
 double Pharmacy::getAnxiety()

@@ -16,6 +16,8 @@ private:
 public:
     //constructor
     PatientAccount();
+    //overloaded constructor
+    PatientAccount(double, double, int);
     //setters
     void setCharge(double);
     void setDays(double);
