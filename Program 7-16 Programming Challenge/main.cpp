@@ -35,6 +35,8 @@ int main()
         cout << "5. Neck Surgery" << endl;
         cin >> choice;
 
+        invoice.setSurgeryCharges(choice);
+
         //send the type of surgery
         do {
             cout << "Which medication did the patient take? (Enter -1 to exit)" << endl;
@@ -44,6 +46,9 @@ int main()
             cout << "4. Vitamins" << endl;
             cout << "5. Amino Acids" << endl;
             cin >> choice;
+
+            invoice.setPharmacyCharges(choice);
+
         } while (choice != -1);
 
         cout << "How many days will the patient be at the hospital? " << endl;
@@ -53,9 +58,9 @@ int main()
         cout << endl << " Report " << endl;
         cout << line << endl;
         cout << "Total days at the hospital: " << invoice.getDays() << endl;
-        cout << "Hospital daily rate: $" << endl;
+        cout << "Hospital daily rate: $" << invoice.getRate() << endl;
         cout << "Total Charges: $" << invoice.getCharges() << endl;
-        cout << "Total Cost: $" << endl;
+        cout << "Total Cost: $" << invoice.getCost() << endl;
 
         invoice.setCharge(0);
 
