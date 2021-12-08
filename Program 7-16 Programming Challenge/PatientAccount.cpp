@@ -6,6 +6,10 @@
  *              and return the computed total.
  * ******************************************/
 #include "PatientAccount.h"
+#include "Surgery.h"
+#include "Pharmacy.h"
+#include <iostream>
+using namespace std;
 
 /*********************************************
  * Name: PatientAccount::PatientAccount()

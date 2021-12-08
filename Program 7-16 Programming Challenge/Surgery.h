@@ -5,7 +5,6 @@
  * ******************************************/
 #ifndef SURGERY_H
 #define SURGERY_H
-#include "PatientAccount.h"
 
 
 class Surgery {
