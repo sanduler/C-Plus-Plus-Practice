@@ -19,7 +19,7 @@ Dice::Dice(int sides)
 
 void Dice::roll()
 {
-
+    
 }
 
 int const Dice::getRoll()
