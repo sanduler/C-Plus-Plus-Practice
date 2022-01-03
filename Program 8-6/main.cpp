@@ -20,6 +20,8 @@ int main()
     for (int month = 0; month < NUM_MONTHS; month++)
     {
         /* code */
+        cout << setw(9) << left << name[month] << " has ";
+        cout << days[month] << " days.\n";
     }
 
     return 0;
