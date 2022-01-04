@@ -29,6 +29,17 @@ int main()
     cin >> payRate;
 
     // Display each employees gross pay
+    cout << "\nHere is the gross pay for each employee:\n";
+    cout << fixed << showpoint << setprecision(2);
+
+    // for loop
+    for (int worker = 0; worker < NUM_WORKERS; worker++)
+    {
+        /* code */
+        double grossPay = hours[worker] * payRate;
+        cout << "Employee #" << (worker + 1);
+        cout << ": $" << setw(7) << grossPay << endl;
+    }
 
     return 0;
 }
